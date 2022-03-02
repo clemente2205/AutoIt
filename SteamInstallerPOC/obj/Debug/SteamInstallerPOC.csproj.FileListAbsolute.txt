@@ -1,0 +1,8 @@
+D:\Users\Parallelstaff\Documents\AutoIt\SteamInstallerPOC\bin\Debug\SteamInstallerPOC.exe.config
+D:\Users\Parallelstaff\Documents\AutoIt\SteamInstallerPOC\bin\Debug\SteamInstallerPOC.exe
+D:\Users\Parallelstaff\Documents\AutoIt\SteamInstallerPOC\bin\Debug\SteamInstallerPOC.pdb
+D:\Users\Parallelstaff\Documents\AutoIt\SteamInstallerPOC\obj\Debug\SteamInstallerPOC.csproj.AssemblyReference.cache
+D:\Users\Parallelstaff\Documents\AutoIt\SteamInstallerPOC\obj\Debug\SteamInstallerPOC.csproj.SuggestedBindingRedirects.cache
+D:\Users\Parallelstaff\Documents\AutoIt\SteamInstallerPOC\obj\Debug\SteamInstallerPOC.csproj.CoreCompileInputs.cache
+D:\Users\Parallelstaff\Documents\AutoIt\SteamInstallerPOC\obj\Debug\SteamInstallerPOC.exe
+D:\Users\Parallelstaff\Documents\AutoIt\SteamInstallerPOC\obj\Debug\SteamInstallerPOC.pdb
