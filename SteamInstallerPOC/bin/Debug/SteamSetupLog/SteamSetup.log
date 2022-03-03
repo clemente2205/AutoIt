@@ -1,0 +1,72 @@
+2022-03-03 11:58:43.710 -06:00 [INF] Ah, there you are!
+2022-03-03 12:39:10.204 -06:00 [INF] Initialize SteamInstallerPOC
+2022-03-03 12:39:17.608 -06:00 [INF] ParseArguments
+2022-03-03 13:37:01.239 -06:00 [INF] Initialized SteamInstallerPOC
+2022-03-03 13:37:02.690 -06:00 [INF] Parsing arguments...
+2022-03-03 13:38:07.179 -06:00 [INF] Initialized SteamInstallerPOC
+2022-03-03 13:38:07.198 -06:00 [INF] Parsing arguments...
+2022-03-03 13:38:07.203 -06:00 [INF] InstallSteam
+2022-03-03 13:38:37.818 -06:00 [INF] Initialized SteamInstallerPOC
+2022-03-03 13:38:37.834 -06:00 [INF] Parsing arguments...
+2022-03-03 13:38:37.839 -06:00 [INF] InstallSteam
+2022-03-03 13:39:08.366 -06:00 [INF] Initialized SteamInstallerPOC
+2022-03-03 13:39:08.383 -06:00 [INF] Parsing arguments...
+2022-03-03 13:39:08.387 -06:00 [INF] InstallSteam
+2022-03-03 13:47:33.780 -06:00 [INF] Initialized SteamInstallerPOC
+2022-03-03 13:47:33.795 -06:00 [INF] Parsing arguments...
+2022-03-03 13:47:33.799 -06:00 [INF] InstallSteam
+2022-03-03 16:19:18.460 -06:00 [INF] Initialized SteamInstallerPOC
+2022-03-03 16:19:25.884 -06:00 [INF] Parsing arguments...
+2022-03-03 16:19:39.312 -06:00 [INF] System.String SteamUsernameSteamInstallerPOC.Configuration.Options
+2022-03-03 16:19:44.728 -06:00 [INF] System.String SteamPasswordSteamInstallerPOC.Configuration.Options
+2022-03-03 16:19:46.604 -06:00 [INF] System.String LeaveSteamOnlineAfterSetupSteamInstallerPOC.Configuration.Options
+2022-03-03 16:19:48.133 -06:00 [INF] System.String CloudSyncSteamInstallerPOC.Configuration.Options
+2022-03-03 16:19:49.313 -06:00 [INF] InstallSteam
+2022-03-03 16:54:11.213 -06:00 [INF] Initialized SteamInstallerPOC
+2022-03-03 16:54:11.230 -06:00 [INF] Parsing arguments...
+2022-03-03 16:54:11.248 -06:00 [INF] InstallSteam
+2022-03-03 16:54:11.249 -06:00 [INF] Installing Steam...
+2022-03-03 16:54:40.132 -06:00 [INF] Steam has been installed correctly
+2022-03-03 16:54:45.526 -06:00 [INF] LoginSteam
+2022-03-03 16:59:55.859 -06:00 [INF] Initialize SteamInstallerPOC
+2022-03-03 16:59:57.004 -06:00 [INF] Parsing arguments...
+2022-03-03 17:00:32.436 -06:00 [INF] Initialize SteamInstallerPOC
+2022-03-03 17:00:32.895 -06:00 [INF] Parsing arguments...
+2022-03-03 17:00:32.900 -06:00 [INF] Arguments parsed
+2022-03-03 17:00:38.420 -06:00 [INF] InstallSteam
+2022-03-03 17:00:44.968 -06:00 [INF] Installing Steam...
+2022-03-03 17:00:56.469 -06:00 [INF] Steam has been installed correctly
+2022-03-03 17:01:05.969 -06:00 [INF] LoginSteam
+2022-03-03 17:01:58.184 -06:00 [FTL] An error has occurred
+2022-03-03 17:02:34.942 -06:00 [INF] Initialize SteamInstallerPOC
+2022-03-03 17:02:36.797 -06:00 [INF] Parsing arguments...
+2022-03-03 17:02:36.801 -06:00 [INF] Arguments parsed
+2022-03-03 17:02:39.369 -06:00 [INF] InstallSteam
+2022-03-03 17:02:39.370 -06:00 [INF] Steam is already installed
+2022-03-03 17:02:44.138 -06:00 [INF] LoginSteam
+2022-03-03 17:14:29.305 -06:00 [INF] Initialize SteamInstallerPOC
+2022-03-03 17:14:30.118 -06:00 [INF] Parsing arguments...
+2022-03-03 17:14:30.123 -06:00 [INF] Arguments parsed
+2022-03-03 17:14:31.090 -06:00 [INF] InstallSteam
+2022-03-03 17:14:31.091 -06:00 [INF] Steam is already installed
+2022-03-03 17:14:41.988 -06:00 [INF] LoginSteam
+2022-03-03 17:14:46.162 -06:00 [INF] Login succesful
+2022-03-03 17:14:52.156 -06:00 [INF] GameSetupProcess
+2022-03-03 17:14:54.028 -06:00 [INF] SteamShutdown
+2022-03-03 17:15:09.193 -06:00 [INF] Steam is closed.
+2022-03-03 17:15:30.529 -06:00 [INF] Initialize SteamInstallerPOC
+2022-03-03 17:15:30.545 -06:00 [INF] Parsing arguments...
+2022-03-03 17:15:30.549 -06:00 [INF] Arguments parsed
+2022-03-03 17:15:30.550 -06:00 [INF] InstallSteam
+2022-03-03 17:15:30.551 -06:00 [INF] Steam is already installed
+2022-03-03 17:15:30.551 -06:00 [INF] LoginSteam
+2022-03-03 17:16:35.122 -06:00 [INF] Initialize SteamInstallerPOC
+2022-03-03 17:16:35.137 -06:00 [INF] Parsing arguments...
+2022-03-03 17:16:35.141 -06:00 [INF] Arguments parsed
+2022-03-03 17:16:35.142 -06:00 [INF] InstallSteam
+2022-03-03 17:16:35.142 -06:00 [INF] Steam is already installed
+2022-03-03 17:16:35.143 -06:00 [INF] LoginSteam
+2022-03-03 17:16:35.189 -06:00 [INF] Login succesful
+2022-03-03 17:16:35.190 -06:00 [INF] GameSetupProcess
+2022-03-03 17:16:35.190 -06:00 [INF] SteamShutdown
+2022-03-03 17:16:50.255 -06:00 [INF] Steam is closed.
