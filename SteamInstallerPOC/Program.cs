@@ -26,14 +26,22 @@ namespace SteamInstallerPOC
         public static void Main(string[] args)
         {
             InitializeLogger();
-            ReadCommandLineArguments(args);
-            InstallSteam();
-            LoginSteam();
-            //ToDO
-            SetUpModeSteam();
-            //ToDo
-            GameSetupProcess();
-            SteamShutdown();
+            try
+            {
+                ReadCommandLineArguments(args);
+                InstallSteam();
+                LoginSteam();
+                //ToDO
+                SetUpModeSteam();
+                //ToDo
+                GameSetupProcess();
+                SteamShutdown();
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal("Unable to install Steam");
+                Environment.Exit(1);
+            }
             Environment.Exit(0);
         }
 
@@ -82,6 +90,7 @@ namespace SteamInstallerPOC
             Log.Information(nameof(LoginSteam));
             var args = "-login " + _options.SteamUsername + " " + _options.SteamPassword + " -silent";
             Execute(SteamFilePath, args, waitForExit:false);
+            Wait(10);
             Log.Information("Login succesful");
         }
 
