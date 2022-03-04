@@ -96,9 +96,53 @@ namespace SteamInstallerPOC
 
         private static void SetUpModeSteam()
         {
-            //SaveSteamDataAccountId
-            //ProcessingSteamworksCommonRedistributablesUpdates
-            //SetupOfflineMode
+            SaveSteamDataAccountID();
+            SetupOfflineMode();
+
+            void SaveSteamDataAccountID()
+            {
+
+            }
+
+            void SetupOfflineMode()
+            {
+                if (bool.Parse(_options.LeaveSteamOnlineAfterSetup))
+                {
+                    return;
+                }
+                Log.Debug(nameof(SetupOfflineMode));
+                auto.AutoItSetOption("MouseCoordMode", 0); //Use coords relative to the current active window (https://www.autoitscript.com/autoit3/docs/functions/AutoItSetOption.htm)
+	            if(auto.ProcessExists("steam.exe") == 0)
+                {
+                    Execute(SteamFilePath, waitForExit:false);
+                }
+                auto.WinWait("Steam");
+                auto.WinActivate("Steam");
+                Wait(1);
+
+                auto.MouseClick("LEFT",27,18,1,0);
+                Wait(1);
+                TakeScreenshot();
+
+                auto.MouseClick("LEFT", 41, 35, 1, 0);
+                Wait(1);
+                TakeScreenshot();
+
+                auto.WinWait("Steam - Go Offline");
+                auto.WinActivate("Steam - Go Offline");
+                Wait(1);
+
+                auto.MouseClick("LEFT", 178, 152, 1, 0);
+                Wait(5);
+                TakeScreenshot();
+                
+                Wait(10); //Sometimes the steam doesn't enough time to change the state
+
+                auto.WinWait("Steam");
+
+                auto.AutoItSetOption("MouseCoordMode", 1); 
+            }
+
         }
 
         private static void GameSetupProcess()
@@ -142,7 +186,7 @@ namespace SteamInstallerPOC
         private static void Execute(string filePath, string arguments = null, bool waitForExit = true)
         {
             /*
-             * Note: AutoIt dll is unable to execute shell process, so it's needed to utilize a Process to pass arguments
+             * Note: AutoItX3 dll is unable to execute shell process by itself, so it's needed to utilize a Process to pass arguments
              * In the actual SteamSetup.au3 a ShellExecute is called, but this cannot be called from AutoItX3 dll
             */
             var pr = new Process
