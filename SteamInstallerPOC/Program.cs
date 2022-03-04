@@ -8,6 +8,7 @@ using SteamInstallerPOC.Helpers;
 using SteamInstallerPOC.Configuration;
 using System.Diagnostics;
 using AutoIt;
+using System.Collections.Generic;
 
 namespace SteamInstallerPOC
 {
@@ -101,7 +102,53 @@ namespace SteamInstallerPOC
 
             void SaveSteamDataAccountID()
             {
+                Log.Debug(nameof(SaveSteamDataAccountID));
+                var userdataDir = "C:/Program Files (x86)/Steam/userdata";
+                if (!Directory.Exists(userdataDir))
+                {
+                    Log.Warning("Directory does not exist, unable to save data accounts");
+                    return;
+                }
+                List<string> fileList = (List<string>) Directory.EnumerateFiles(userdataDir);
+                if (fileList[0] == null)
+                {
+                    Log.Warning("No files were found, unable to save data accounts");
+                    return;
+                }
+                var steamDataAccountId = fileList[1];
 
+                //TODO
+
+                //disable cloud auto sync
+
+                //var enableSync = bool.Parse(_options.CloudSync) ? 1 : 0;
+
+                //var content = '"UserRoamingConfigStore"' & @CRLF & '{' & @CRLF & @TAB & '"Software"' & @CRLF & @TAB & '{' & @CRLF & @TAB & @TAB & '"Valve"' & @CRLF & @TAB & @TAB & '{' & @CRLF & @TAB & @TAB & @TAB & '"Steam"' & @CRLF & @TAB & @TAB & @TAB & '{' & @CRLF & @TAB & @TAB & @TAB & @TAB & '"CloudEnabled"' & @TAB & @TAB & '"' & $enableSync & '"' & @CRLF & @TAB & @TAB & @TAB & '}' & @CRLF & @TAB & @TAB & '}' & @CRLF & @TAB & '}' & @CRLF & '}';
+
+                //var dirPath = $userdataDir & '\' & $steamDataAccountId & '\7\remote'
+
+                //var filePath = $dirPath & '\sharedconfig.vdf'
+
+
+                //   OverWrite($dirPath, $filePath, $content)
+
+                // disable news
+
+                //$content = '"UserLocalConfigStore"' & @CRLF & '{' & @CRLF & @TAB & '"News"' & @CRLF & @TAB & '{' & @CRLF & @TAB & @TAB & '"NotifyAvailableGames"' & @TAB & @TAB & '"0"' & @CRLF & @TAB & '}' & @CRLF & '}'
+                //$dirPath = $userdataDir & '\' & $steamDataAccountId & '\config'
+                //$filePath = $dirPath & '\localconfig.vdf'
+
+
+                //   OverWrite($dirPath, $filePath, $content)
+
+                //   ; save < steamDataAccountId >
+
+                //$content = '{"SteamDataAccountId":"' & $steamDataAccountId & '"}'
+                //$dirPath = @ScriptDir
+                //$filePath = $dirPath & '\SteamUserProfile.json'
+
+
+                //   OverWrite($dirPath, $filePath, $content)
             }
 
             void SetupOfflineMode()
